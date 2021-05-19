@@ -109,27 +109,43 @@ body {
 
 .wrapper {
   /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
-  align-items: center;
+  align-items: flex-start;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-flow: column;
+  justify-content: flex-start;
   margin: 0;
   height: 100%;
-  width: 75%;
+  width: 100%;
+}
+
+.headings {
+  display: flex;
+  flex-flow: column;
+  width: 60%;
 }
 
 .heading1 {
   color: #F6025D;
   display: flex;
   font-family: 'Pattaya', sans-serif;
-  font-size: 1.75em;
+  font-size: 4em;
+  padding: 30px;
 }
 
 .heading2 {
   color: #F6025D;
   display: flex;
   font-family: 'Pattaya', sans-serif;
+  font-size: 1.75em;
+  padding: 0px 30px;
+}
+
+.heading3 {
+  color: #F6025D;
+  display: flex;
+  font-family: 'Pattaya', sans-serif;
   font-size: 2.5em;
+  padding: 0px 30px;
 }
 
 p {
@@ -148,7 +164,7 @@ p {
   border-radius: 10px;
   justify-content: center;
   padding: 0px 30px;
-  width: 300px;
+  width: 500px;
   height: 300px;
 }
 
