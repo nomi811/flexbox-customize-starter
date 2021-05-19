@@ -162,17 +162,30 @@ p {
   font-size: 1.25em;
   line-height: 1.5em;
   border-radius: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 50px 30px;
+  width: 100%;
+}
+
+.top p {
+  color: #F6025D;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.5em;
   padding: 0px 30px;
-  width: 500px;
-  height: 300px;
 }
 
 #content p {
   font-family: 'Lora', sans-serif;
 }
 
-
+.col-1,  col-2, col-3 {
+align-items: center;
+display: flex;
+justify-content: center;
+width: 30%;
+}
 
 
 
