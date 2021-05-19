@@ -97,7 +97,11 @@ textarea {
 
 /*Large Background Image*/
 html {
-  background: url(../img/pexels-larissa-farber-7690061.jpg) no-repeat center center fixed;
+  background: url(../img/pexels-larissa-farber-7690061.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right bottom;
   height: 100%;
    /* set height to 100% - these are important for allowing content to vertically align */
 }
@@ -109,10 +113,10 @@ body {
 
 .wrapper {
   /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
-  align-items: flex-start;
+  /* align-items: flex-start; */
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   margin: 0;
   height: 100%;
   width: 100%;
@@ -125,7 +129,7 @@ body {
 }
 
 .heading1 {
-  color: #F6025D;
+  color: #576675;
   display: flex;
   font-family: 'Pattaya', sans-serif;
   font-size: 4em;
@@ -133,7 +137,7 @@ body {
 }
 
 .heading2 {
-  color: #F6025D;
+  color: #576675;
   display: flex;
   font-family: 'Pattaya', sans-serif;
   font-size: 1.75em;
@@ -141,10 +145,19 @@ body {
 }
 
 .heading3 {
-  color: #F6025D;
+  color: #576675;
   display: flex;
   font-family: 'Pattaya', sans-serif;
   font-size: 2.5em;
+  padding: 0px 30px;
+}
+
+.top p {
+  color: #576675;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.5em;
   padding: 0px 30px;
 }
 
@@ -155,36 +168,36 @@ p {
 
 #content {
   /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
-  color: #F6025D;
+  color: #576675;
   display: flex;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1.5em;
-  border-radius: 10px;
+  border-top: 1px solid #576675;
+  border-bottom: 1px solid #576675;
   justify-content: space-between;
-  padding: 50px 30px;
-  width: 100%;
+  margin: 2em 1.5em;
+  padding: 1em;
+  width: 90%;
 }
 
-.top p {
-  color: #F6025D;
-  font-family: 'Lora', sans-serif;
-  font-size: 1.25em;
-  font-weight: 300;
-  line-height: 1.5em;
-  padding: 0px 30px;
-}
+
 
 #content p {
   font-family: 'Lora', sans-serif;
 }
 
-.col-1,  col-2, col-3 {
-align-items: center;
+.col-1,  .col-2, .col-3 {
+align-items: flex-start;
 display: flex;
 justify-content: center;
 width: 30%;
+}
+
+.col-2, .col-3 {
+  border-left: 1px solid #576675;
+  padding-left: 1.5em;
 }
 
 
